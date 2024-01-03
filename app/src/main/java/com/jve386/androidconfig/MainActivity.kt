@@ -1,46 +1,30 @@
 package com.jve386.androidconfig
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.jve386.androidconfig.ui.theme.AndroidConfigTheme
+import com.jve386.androidconfig.ScreenSettings.SettingsActivity
+import com.jve386.androidconfig.databinding.MainActivityBinding
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var binding: MainActivityBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            AndroidConfigTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+
+        // Use View Binding to inflate the layout and initialize the binding object
+        binding = MainActivityBinding.inflate(layoutInflater)
+
+        // Set the content view of the activity to the root view of the inflated layout
+        setContentView(binding.root)
+        binding.btnSettings.setOnClickListener {
+            navigateToSettings()
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AndroidConfigTheme {
-        Greeting("Android")
+    private fun navigateToSettings() {
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
     }
 }

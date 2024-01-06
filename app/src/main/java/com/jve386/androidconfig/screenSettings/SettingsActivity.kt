@@ -11,14 +11,34 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val swt = findViewById<SwitchMaterial>(R.id.swtDarkMode)
+        val swtDarkMode = findViewById<SwitchMaterial>(R.id.swtDarkMode)
+        val swtBluetooth = findViewById<SwitchMaterial>(R.id.swtBluetooth)
+        val swtvibrate = findViewById<SwitchMaterial>(R.id.swtVibration)
 
-        swt.setOnClickListener {
-            if (swt.isChecked) {
-                Toast.makeText(applicationContext, "Switch is on", Toast.LENGTH_LONG).show()
+        swtDarkMode.setOnClickListener {
+            if (swtDarkMode.isChecked) {
+                Toast.makeText(applicationContext, "Dark Mode switch is on", Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(applicationContext, "Switch is off", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "Dark Mode switch is off", Toast.LENGTH_LONG).show()
             }
         }
+
+        swtBluetooth.setOnClickListener {
+            if (swtBluetooth.isChecked) {
+                Toast.makeText(applicationContext, "Bluetooth switch is on", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(applicationContext, "Bluetooth switch is off", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        swtvibrate.setOnClickListener {
+            if (swtvibrate.isChecked) {
+                Toast.makeText(applicationContext, "Vibration switch is on", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(applicationContext, "Vibration switch is off", Toast.LENGTH_LONG).show()
+            }
+        }
+
+
     }
 }

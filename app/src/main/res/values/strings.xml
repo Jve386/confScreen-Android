@@ -1,4 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">AndroidConfig</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="dark_theme_description">Toggle to active Dark Theme.</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="volume">Volume</string>
+    <string name="bluetooth_description">Toggle to activate bluetooth.</string>
 </resources>

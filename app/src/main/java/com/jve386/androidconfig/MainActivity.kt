@@ -3,7 +3,7 @@ package com.jve386.androidconfig
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import com.jve386.androidconfig.ScreenSettings.SettingsActivity
+import com.jve386.androidconfig.screenSettings.SettingsActivity
 import com.jve386.androidconfig.databinding.MainActivityBinding
 
 class MainActivity : ComponentActivity() {

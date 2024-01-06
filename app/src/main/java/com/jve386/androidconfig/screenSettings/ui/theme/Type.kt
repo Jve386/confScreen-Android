@@ -1,4 +1,4 @@
-package com.jve386.androidconfig.ScreenSettings.ui.theme
+package com.jve386.androidconfig.screenSettings.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

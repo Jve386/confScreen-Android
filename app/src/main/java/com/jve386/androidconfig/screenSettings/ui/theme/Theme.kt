@@ -1,4 +1,4 @@
-package com.jve386.androidconfig.ScreenSettings.ui.theme
+package com.jve386.androidconfig.screenSettings.ui.theme
 
 import android.app.Activity
 import android.os.Build

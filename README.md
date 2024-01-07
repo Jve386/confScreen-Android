@@ -58,6 +58,10 @@
 - **Responsibilities:**
   - Used to create a single instance of the DataStore for settings.
 
+<p>
+<img src="image/sample1.jpg" alt="Screen"/>
+</p>
+
 ## How to Use ✨
 
 1. Clone the repository.

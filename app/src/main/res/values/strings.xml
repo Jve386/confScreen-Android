@@ -6,4 +6,5 @@
     <string name="bluetooth">Bluetooth</string>
     <string name="volume">Volume</string>
     <string name="bluetooth_description">Toggle to activate bluetooth.</string>
+    <string name="vibration">Vibration</string>
 </resources>

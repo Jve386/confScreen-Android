@@ -158,7 +158,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/bluetooth"
+            android:text="@string/vibration"
             android:textColor="@color/settings_title"
             tools:text="sample" />
 

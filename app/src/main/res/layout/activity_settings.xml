@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dark_theme"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_title"
                 tools:text="sample" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bluetooth"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_title"
                 tools:text="sample" />
 
             <TextView
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/volume"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_title"
                 tools:text="sample" />
 
             <com.google.android.material.slider.RangeSlider
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/bluetooth"
-            android:textColor="@color/black"
+            android:textColor="@color/settings_title"
             tools:text="sample" />
 
 
